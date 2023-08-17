@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        .item{
+            height: 300px;
+        }
+
+
+        /*Extra large devices (large desktops, 1200px and up)*/
+        @media (min-width: 1200px) {
+            .item{
+                height: 250px;
+            }
+        }
+        /*Large devices (desktops, 992px and up)*/
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            .item{
+                height: 200px;
+            }
+        }
+        /*Medium devices (tablets, 768px and up)*/
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .item{
+                height: 150px;
+            }
+        }
+
+        /*Small devices (landscape phones, 576px and up)*/
+        @media (min-width: 576px) and (max-width: 767.98px){ 
+            .item{
+                height: 100px;
+            }
+        }
+
+        /*Extra small devices (portrait phones, less than 576px)*/
+        @media (max-width: 575.98px) {
+            .item{
+                height: 50px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" style="background-color: aqua;">
+        <div class="row">
+            <div class="col-xl-12 col-lg-6 col-md-3 col-sm-4 col-12 item" style="background-color: aquamarine;">
+                1
+            </div>
+            <div class="col-xl-12 col-lg-6 col-md-3 col-sm-4 col-12 item" style="background-color: aquamarine;">
+                2
+            </div>
+            <div class="col-xl-12 col-lg-6 col-md-3 col-sm-4 col-12 item" style="background-color: aquamarine;">
+                3
+            </div>
+            <div class="col-xl-12 col-lg-6 col-md-3 col-sm-4 col-12 item" style="background-color: aquamarine;">
+                4
+            </div>
+        </div>
+    </div>
+</body>
+</html>
